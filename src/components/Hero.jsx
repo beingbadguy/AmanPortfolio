@@ -5,7 +5,7 @@ const Hero = () => {
   const mode = useContext(ColorContext);
 
   return (
-    <div className=' flex justify-between items-start pt-[14vh] md:pt-[20vh] p-14 h-[100vh] flex-col md:flex-row '>
+    <div className=' flex justify-between items-start pt-[14vh] md:pt-[20vh] px-10 py-14 h-[100vh] flex-col md:flex-row '>
       <div className=' w-[100%] md:w-[50%] flex flex-col items-start gap-2'>
         <div className='flex items-center gap-1'>
           <p className='text-lg '>Hey, I'm Aman Kumar!</p>
