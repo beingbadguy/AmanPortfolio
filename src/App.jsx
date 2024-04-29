@@ -17,7 +17,6 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      console.log(window.scrollY);
       setscrolling(window.scrollY);
     });
   }, []);

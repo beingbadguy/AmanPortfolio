@@ -9,7 +9,7 @@ import { CgMenuRight } from 'react-icons/cg';
 const Header = ({ value }) => {
   const mode = useContext(ColorContext);
   const [menu, setmenu] = useState(false);
-  let scroller = Math.floor(value / 19.81) + '%;';
+  let scroller = Math.floor(value / 13.81) + '%;';
   return (
     <div
       className={` ${
@@ -19,7 +19,7 @@ const Header = ({ value }) => {
       } `}
     >
       <div
-        className={`absolute h-1 w-[${scroller}] bg-purple-500 top-[0%] left-0 transition-all`}
+        className={` absolute h-1 w-[${scroller}] bg-purple-500 top-[0%] left-0 transition-all`}
       ></div>
       <div className='flex '>
         <img
