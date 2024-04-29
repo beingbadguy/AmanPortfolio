@@ -19,9 +19,7 @@ const Header = () => {
       <div className='flex '>
         <img
           src={`${
-            mode.clr
-              ? '/src/assets/image__2_-removebg-preview.png'
-              : '/src/assets/Aman_logo-removebg-preview.png'
+            mode.clr ? '/image__2_-removebg-preview.png' : '/Aman_logo-removebg-preview.png'
           }`}
           className='h-10 '
         />

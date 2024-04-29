@@ -9,7 +9,7 @@ const Hero = () => {
       <div className=' w-[100%] md:w-[50%] flex flex-col items-start gap-2'>
         <div className='flex items-center gap-1'>
           <p className='text-lg '>Hey, I'm Aman Kumar!</p>
-          <img src='/src/assets/hello.svg' alt='' className='h-5' />
+          <img src='/hello.svg' alt='' className='h-5' />
         </div>
         <div className='text-[40px] md:text-[70px] font-bold'>
           <span className='text-purple-500'>Front</span>end <br />
@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       <div className=' w-[100%] md:w-[40%]  rounded-[50%] border-purple-500 p-6 flex justify-center items-center '>
         <img
-          src='/src/assets/photo-removebg-preview.png'
+          src='/photo-removebg-preview.png'
           alt=''
           className=' rounded-xl h-[280px] md:h-[400px]'
         />
