@@ -24,6 +24,7 @@ const Skills = () => {
             <li>ReactJS</li>
             <li>CSS3</li>
             <li>HTML</li>
+            <li>Tailwind</li>
           </ul>
         </div>
         <div>
