@@ -1,3 +1,4 @@
+import { WiDirectionUpRight } from 'react-icons/wi';
 const Projects = () => {
   return (
     <div className='pl-12 pr-12 mb-10'>
@@ -6,8 +7,24 @@ const Projects = () => {
           Projects <span className='text-purple-500'>.</span>
         </h1>
       </div>
-      <div className='flex justify-center items-center  h-[80vh] mt-10 '>
-        <h1>All the projects will be listed here...</h1>
+      <div className='flex justify-start items-right  h-[80vh] mt-10 '>
+        <div className='rounded h-[350px] '>
+          <a href='https://sassy-ecom.vercel.app/'>
+            <img
+              src='/Sassy.png'
+              alt=''
+              className=' rounded p-2 h-[200px] md:h-[300px] border border-black cursor-pointer'
+            />
+          </a>
+          <div className='flex gap-6 '>
+            <h1 className='font-bold mt-6 text-xl'>Slayyyyyy</h1>
+            <a href='https://sassy-ecom.vercel.app/'>
+              <WiDirectionUpRight className='mt-6 text-3xl p- border border-purple-500 cursor-pointer rounded-[50%] text-purple-500' />
+            </a>
+          </div>
+          <p className='mt-2'>E-commerce platform promoting eco-friendly products with payment integration.</p>
+        </div>
+        {/* <h1>All the projects will be listed here...</h1> */}
       </div>
     </div>
   );
