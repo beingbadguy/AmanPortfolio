@@ -47,7 +47,7 @@ const Header = ({ value }) => {
             About
           </NavLink>
           <NavLink
-            to='https://docs.google.com/document/d/1dedfarf0K0dlmdTEbE4Yi1peCF4roIsH/edit?usp=sharing&ouid=113368593738348449241&rtpof=true&sd=true'
+            to='https://drive.google.com/file/d/1e-2Tzhsk2F_7kInXLDRbrILAZAaF09qU/view?usp=sharing'
             target='_blank'
             className='hover:text-purple-500 transition-all cursor-pointer'
           >
