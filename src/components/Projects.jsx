@@ -9,12 +9,12 @@ const Projects = () => {
       </div>
       <div className='flex justify-start items-right  h-[80vh] mt-10 '>
         <div className='rounded h-[350px] '>
-          <div className=' bg-purple-50 rounded'>
+          <div className=' bg-purple-100 rounded'>
             <a href='https://sassy-ecom.vercel.app/'>
               <img
                 src='/Sassy.png'
                 alt=''
-                className=' rounded-xl  p-2 h-[200px] md:h-[300px] cursor-pointer hover:scale-90 transition-all'
+                className=' rounded-xl  p-2 h-[200px] md:h-[300px] cursor-pointer scale-95  hover:scale-90 transition-all'
               />
             </a>
           </div>

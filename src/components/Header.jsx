@@ -2,7 +2,7 @@ import { GrContactInfo } from 'react-icons/gr';
 import { AiOutlineClose } from 'react-icons/ai';
 import { CiDark } from 'react-icons/ci';
 import { CiLight } from 'react-icons/ci';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ColorContext } from '../context/ColorContext';
 import { NavLink } from 'react-router-dom';
 import { CgMenuRight } from 'react-icons/cg';
@@ -10,6 +10,9 @@ const Header = ({ value }) => {
   const mode = useContext(ColorContext);
   const [menu, setmenu] = useState(false);
   let scroller = Math.floor(value / 13.81) + '%;';
+  useEffect(() => {
+    localStorage.setItem('colorMode', JSON.stringify(mode.clr));
+  }, [mode.clr]);
   return (
     <div
       className={` ${
