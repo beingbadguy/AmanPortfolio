@@ -14,7 +14,7 @@ const Projects = () => {
               <img
                 src='/Sassy.png'
                 alt=''
-                className=' rounded-xl  p-2 h-[200px] md:h-[300px] cursor-pointer scale-95  hover:scale-90 transition-all'
+                className=' rounded-xl  p-2 h-[200px] md:h-[300px] cursor-pointer scale-95  hover:scale-90 transition-all relative z-0 '
               />
             </a>
           </div>
