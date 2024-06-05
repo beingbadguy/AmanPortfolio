@@ -17,10 +17,10 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      setscrolling(window.scrollY);
+      setscrolling((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
     });
   }, []);
-
+  
   return (
     <div
       ref={myref}

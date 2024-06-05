@@ -9,8 +9,7 @@ import { CgMenuRight } from 'react-icons/cg';
 const Header = ({ value }) => {
   const mode = useContext(ColorContext);
   const [menu, setmenu] = useState(false);
-  let scroller = Math.floor(value / 13.81) + '%;';
-  useEffect(() => {
+  let scroller = value + '%;';  useEffect(() => {
     localStorage.setItem('colorMode', JSON.stringify(mode.clr));
   }, [mode.clr]);
   return (
