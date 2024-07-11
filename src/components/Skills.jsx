@@ -1,7 +1,7 @@
 import { RxCross2 } from 'react-icons/rx';
 const Skills = () => {
   return (
-    <div className='pl-12 pr-12 mb-10'>
+    <div className='pl-12 pr-12 mb-10 w-[100%]'>
       <div className='flex items-end gap-1'>
         <h1 className='font-bold text-[60px]'>
           Skills <span className='text-purple-500'>.</span>
