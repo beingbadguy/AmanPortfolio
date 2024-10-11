@@ -38,9 +38,9 @@ function App() {
       <Story />
 
       {/* Education  */}
-      <div className="w-[100%] md:w-[100%] mt-4   pl-12 pr-12 mb-10">
+      <div className="w-[100%] md:w-[100%] mt-4   px-5 md:px-12 mb-10">
         <div className="flex items-end gap-1">
-          <h1 className="font-bold text-[60px]">
+          <h1 className="font-bold text-[40px] md:text-[60px]">
             Education <span className="text-purple-500">.</span>
           </h1>
         </div>

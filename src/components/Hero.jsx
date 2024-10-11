@@ -23,19 +23,21 @@ const Hero = () => {
           <div className="text-white flex justify-center items-center bg-purple-500 rounded p-2 transition-all hover:bg-white hover:text-black hover:border cursor-pointer  md:w-[150px]">
             <a href="mailto:authorisedaman@gmail.com">Get In Touch</a>
           </div>
-          <div
-            className={` flex justify-center items-center rounded border ${
-              mode.clr ? "border-black" : "border-white "
-            }  p-2 w-[100px] md:w-[150px]`}
-          >
-            <Link
-              to="https://drive.google.com/file/d/1e-2Tzhsk2F_7kInXLDRbrILAZAaF09qU/view?usp=sharing"
-              target="_blank"
-              className="hover:text-purple-500 transition-all cursor-pointer "
+
+          <Link to="https://drive.google.com/file/d/1C1yapNjaK0HpL4OfR0nc3nm6O9vY8ap6/view?usp=sharing">
+            <div
+              className={` flex justify-center items-center rounded border ${
+                mode.clr ? "border-black" : "border-white "
+              }  p-2 w-[100px] md:w-[150px]`}
             >
-              Resume
-            </Link>
-          </div>
+              <Link
+                target="_blank"
+                className="hover:text-purple-500 transition-all cursor-pointer "
+              >
+                Resume
+              </Link>
+            </div>
+          </Link>
         </div>
       </div>
       <div className=" w-[100%] md:w-[40%]  rounded-[50%] border-purple-500 p-6 flex justify-center items-center ">
