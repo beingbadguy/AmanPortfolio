@@ -54,7 +54,7 @@ function App() {
           <Education
             imgUrl={"./gbpit-removebg-preview.png"}
             title="GB Pant Institute of Technology"
-            stream="Computer Science"
+            stream="Mechanical Engineering"
             period="2018 - 2021"
           />
           <Education
