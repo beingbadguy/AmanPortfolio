@@ -1,27 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import './index.css';
-import { ContextProvider } from './context/ColorContext.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Projects from './components/Projects.jsx';
-import Story from './components/Story.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { ContextProvider } from "./context/ColorContext.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Projects from "./components/Projects.jsx";
+import Story from "./components/Story.jsx";
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
   },
   {
-    path: '/projects',
+    path: "/projects",
     element: <Projects />,
   },
   {
-    path: '/about',
+    path: "/about",
     element: <Story />,
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ContextProvider>
       <RouterProvider router={router} />
