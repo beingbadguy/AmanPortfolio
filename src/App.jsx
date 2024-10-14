@@ -19,7 +19,6 @@ function App() {
   const [languageIndex, setLanguageIndex] = useState(0);
 
   const greetings = [
-    "नमस्ते", // Hindi
     "Hello", // English
     "Hola", // Spanish
     "Bonjour", // French
@@ -31,17 +30,19 @@ function App() {
     "مرحبا", // Arabic
     "Olá", // Portuguese
     "안녕하세요", // Korean
+    "नमस्ते", // Hindi
   ];
   // console.log(languageIndex);
+  const handleScroll = () => {
+    setscrolling(
+      (window.scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
+        100
+    );
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setscrolling(
-        (window.scrollY /
-          (document.documentElement.scrollHeight - window.innerHeight)) *
-          100
-      );
-    });
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -62,7 +63,7 @@ function App() {
           return 0;
         }
       });
-    }, 300);
+    }, 320);
 
     return () => clearInterval(subscribe);
   }, []);
@@ -70,7 +71,7 @@ function App() {
   return (
     <div>
       {loading ? (
-        <div className="flex justify-center items-center h-[100vh] font-bold">
+        <div className="flex justify-center items-center h-[100vh] font-bold bg-white text-black text-2xl">
           {greetings[languageIndex]}
         </div>
       ) : (

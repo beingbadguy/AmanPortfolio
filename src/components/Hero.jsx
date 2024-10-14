@@ -12,11 +12,11 @@ const Hero = () => {
           <p className="text-lg">Hey, I'm Aman Kumar!</p>
           <img src="/hello.svg" alt="hello" className="h-5" />
         </div>
-        <div className="text-[40px] md:text-[70px] font-bold">
+        <div className="text-[40px] md:text-[70px] font-bold leading-[40px] md:leading-[70px]">
           <span className="text-purple-500">Front</span>end <br />
           Developer
         </div>
-        <p className="md:text-2xl">
+        <p className="md:text-2xl mt-8">
           I'm a frontend developer based in India, I'll help you build beautiful
           websites your users will love.
         </p>
