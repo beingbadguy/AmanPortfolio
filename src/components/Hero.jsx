@@ -13,11 +13,11 @@ const Hero = () => {
           <img src="/hello.svg" alt="hello" className="h-5" />
         </div>
         <div className="text-[40px] md:text-[70px] font-bold leading-[40px] md:leading-[70px]">
-          <span className="text-purple-500">Front</span>end <br />
+          <span className="text-purple-500">Full</span> Stack <br />
           Developer
         </div>
         <p className="md:text-2xl mt-8">
-          I'm a frontend developer based in India, I'll help you build beautiful
+          I'm a Full developer based in India, I'll help you build beautiful
           websites your users will love.
         </p>
         <div className="flex gap-10 mt-1 md:mt-10 font-bold text-sm md:text-md">
