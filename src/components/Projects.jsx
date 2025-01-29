@@ -2,19 +2,27 @@ import { WiDirectionUpRight } from "react-icons/wi";
 import { Link } from "react-router-dom";
 const Projects = () => {
   return (
-    <div className="mx-5 md:pl-12 md:pr-12 mb-10">
-      <div className="flex items-end gap-1">
+    <div className="mx-5 pl-6 pr-6 md:pl-12 md:pr-12 mb-10 flex items-center flex-col justify-start w-full ">
+      <div className="w-full">
         <h1 className="font-bold text-[40px] md:text-[60px]">
           Projects <span className="text-purple-500">.</span>
         </h1>
       </div>
-      <div className="flex justify-between flex-wrap gap-5 flex-col md:flex-row">
+      <span className="w-full">
+        <i>*Some projects can take time to load*</i>
+      </span>
+      {/* flex justify-between flex-wrap gap-5 flex-col md:flex-row */}
+      <div className="flex items-center justify-between flex-wrap gap-5 flex-col md:flex-row ">
         {/* lenny  */}
 
-        <div className="flex justify-start items-right  md:h-[60vh] mt-10 ">
+        <div className="flex md:justify-start items-right  md:h-[60vh] mt-10 ">
           <div className="rounded h-[350px] ">
             <div className=" bg-purple-100 rounded">
-              <Link to="https://lenny-phi.vercel.app/">
+              <Link
+                to="https://lenny-phi.vercel.app/"
+                target="_blank"
+                className="flex items-center justify-center"
+              >
                 <img
                   src="./lenny.png"
                   alt=""
@@ -24,7 +32,7 @@ const Projects = () => {
             </div>
             <div className="flex gap-6 ">
               <h1 className="font-bold mt-6 text-xl">Amy</h1>
-              <Link to="https://lenny-phi.vercel.app/">
+              <Link to="https://lenny-phi.vercel.app/" target="_blank">
                 <WiDirectionUpRight className="mt-6 text-3xl p- border border-purple-500 cursor-pointer rounded-[50%] text-purple-500" />
               </Link>
             </div>
@@ -36,8 +44,96 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Quizy  */}
+        {/* JerseyNation  */}
         <div className="flex justify-start items-right  md:h-[60vh] mt-10 ">
+          <div className="rounded h-[350px] ">
+            <div className=" bg-purple-100 rounded ">
+              <Link to="https://jerseynation.onrender.com/" target="_blank" className="flex items-center justify-center">
+                <img
+                  src="./jerseyNation.png"
+                  alt=""
+                  className=" rounded-xl  p-2 h-[200px] md:h-[300px] cursor-pointer scale-95  hover:scale-90 transition-all relative z-0 "
+                />
+              </Link>
+            </div>
+            <div className="flex gap-6 ">
+              <h1 className="font-bold mt-6 text-xl">JerseyNation</h1>
+              <Link
+                to="https://jerseynation.onrender.com/"
+                target="_blank"
+                className="flex items-center justify-center"
+              >
+                <WiDirectionUpRight className="mt-6 text-3xl p- border border-purple-500 cursor-pointer rounded-[50%] text-purple-500" />
+              </Link>
+            </div>
+            <p className="mt-2">
+              "Gear up your game with style. Discover premium football gear,{" "}
+              <br /> explore top brands, and elevate your play with
+              JerseyNation."
+            </p>
+          </div>
+        </div>
+
+        {/* Bulletin  */}
+        <div className="flex justify-start items-right  md:h-[60vh] mt-10 ">
+          <div className="rounded h-[350px] ">
+            <div className=" bg-purple-100 rounded">
+              <Link
+                to="https://bulletin-is7s.onrender.com/"
+                target="_blank"
+                className="flex items-center justify-center"
+              >
+                <img
+                  src="./bulletin.png"
+                  alt=""
+                  className=" rounded-xl  p-2 h-[200px] md:h-[300px] cursor-pointer scale-95  hover:scale-90 transition-all relative z-0 "
+                />
+              </Link>
+            </div>
+            <div className="flex gap-6 ">
+              <h1 className="font-bold mt-6 text-xl">Bulletin</h1>
+              <Link to="https://bulletin-is7s.onrender.com/" target="_blank">
+                <WiDirectionUpRight className="mt-6 text-3xl p- border border-purple-500 cursor-pointer rounded-[50%] text-purple-500" />
+              </Link>
+            </div>
+            <p className="mt-2">
+              "Unlock the power of words. Explore insightful articles, <br />{" "}
+              dive into diverse topics, and stay informed with Bulletin."
+            </p>
+          </div>
+        </div>
+
+        {/* Chatty  */}
+        <div className="flex justify-start items-right  md:h-[60vh] mt-10 ">
+          <div className="rounded h-[350px] ">
+            <div className=" bg-purple-100 rounded">
+              <Link
+                to="https://chattyapp-gy71.onrender.com/"
+                target="_blank"
+                className="flex items-center justify-center"
+              >
+                <img
+                  src="./image.png"
+                  alt=""
+                  className=" rounded-xl  p-2 h-[200px] md:h-[300px] cursor-pointer scale-95  hover:scale-90 transition-all relative z-0 "
+                />
+              </Link>
+            </div>
+            <div className="flex gap-6 ">
+              <h1 className="font-bold mt-6 text-xl">Chatty</h1>
+              <Link to="https://chattyapp-gy71.onrender.com/" target="_blank">
+                <WiDirectionUpRight className="mt-6 text-3xl p- border border-purple-500 cursor-pointer rounded-[50%] text-purple-500" />
+              </Link>
+            </div>
+            <p className="mt-2">
+              "Connect instantly, chat effortlessly. Experience seamless
+              communication, <br /> and stay in touch in real-time with Chatty."
+            </p>
+          </div>
+        </div>
+
+        {/* Quizy  */}
+        {/* <div className="flex justify-start items-right  md:h-[60vh] mt-10 ">
           <div className="rounded h-[350px] ">
             <div className=" bg-purple-100 rounded">
               <Link to="https://quizy-psi.vercel.app/">
@@ -60,14 +156,17 @@ const Projects = () => {
               with Quizy."
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* EstateNation  */}
 
         <div className="flex justify-start items-right  md:h-[60vh] mt-10 ">
           <div className="rounded h-[350px] ">
             <div className=" bg-purple-100 rounded">
-              <Link to="https://estate-nation.vercel.app/">
+              <Link
+                to="https://estate-nation.vercel.app/"
+                className="flex items-center justify-center"
+              >
                 <img
                   src="./EstateNation.png"
                   alt=""
@@ -94,7 +193,10 @@ const Projects = () => {
         <div className="flex justify-start items-right  md:h-[60vh] mt-10 ">
           <div className="rounded h-[350px] ">
             <div className=" bg-purple-100 rounded">
-              <Link to="https://job-connect-taupe.vercel.app/">
+              <Link
+                to="https://job-connect-taupe.vercel.app/"
+                className="flex items-center justify-center"
+              >
                 <img
                   src="./JobConnect.png"
                   alt=""
@@ -120,7 +222,10 @@ const Projects = () => {
         <div className="flex justify-start items-right  md:h-[60vh]  mt-10 ">
           <div className="rounded h-[350px] ">
             <div className=" bg-purple-100 rounded">
-              <a href="https://sassy-ecom.vercel.app/">
+              <a
+                href="https://sassy-ecom.vercel.app/"
+                className="flex items-center justify-center"
+              >
                 <img
                   src="/Sassy.png"
                   alt=""
@@ -145,7 +250,10 @@ const Projects = () => {
         <div className="flex justify-start items-right  md:h-[60vh]  ">
           <div className="rounded h-[350px] ">
             <div className=" bg-purple-100 rounded">
-              <Link to="https://notify-ochre.vercel.app/">
+              <Link
+                to="https://notify-ochre.vercel.app/"
+                className="flex items-center justify-center"
+              >
                 <img
                   src="./Notify.png"
                   alt=""
