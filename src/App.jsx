@@ -10,6 +10,8 @@ import { useContext } from "react";
 import { ColorContext } from "./context/ColorContext";
 import { useRef } from "react";
 import Education from "./components/Education";
+import RippleText from "./components/RippleText";
+import GodlyText from "./GodlyText";
 
 function App() {
   const mode = useContext(ColorContext);

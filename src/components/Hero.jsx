@@ -17,8 +17,8 @@ const Hero = () => {
           Developer
         </div>
         <p className="md:text-2xl mt-8">
-          I'm a Full developer based in India, I'll help you build beautiful
-          websites your users will love.
+          I'm a Full Stack Developer based in India, I'll help you build
+          beautiful websites your users will love.
         </p>
         <div className="flex gap-10 mt-1 md:mt-10 font-bold text-sm md:text-md">
           <div className="text-white flex justify-center items-center bg-purple-500 rounded p-2 transition-all hover:bg-white hover:text-black hover:border cursor-pointer md:w-[150px]">

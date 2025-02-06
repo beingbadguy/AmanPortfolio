@@ -21,7 +21,7 @@ const Header = ({ value }) => {
     <div
       className={` ${
         mode.clr ? "bg-white" : "bg-black"
-      } flex items-center justify-between font-bold items-center z-50 pl-8 py-6 pr-8 md:pl-14 md:pr-14 fixed w-[100%] ${
+      } flex items-center justify-between font-bold  z-50 pl-8 py-6 pr-8 md:pl-14 md:pr-14 fixed w-[100%] ${
         scroller ? "border-t-6 border-purple-100" : ""
       } `}
     >

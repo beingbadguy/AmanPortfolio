@@ -1,6 +1,8 @@
 import { WiDirectionUpRight } from "react-icons/wi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Projects = () => {
+  const location = useLocation();
+  // console.log(location);
   return (
     <div className="mx-5 pl-6 pr-6 md:pl-12 md:pr-12 mb-10 flex items-center flex-col justify-start w-full ">
       <div className="w-full">
@@ -48,7 +50,11 @@ const Projects = () => {
         <div className="flex justify-start items-right  md:h-[60vh] mt-10 ">
           <div className="rounded h-[350px] ">
             <div className=" bg-purple-100 rounded ">
-              <Link to="https://jerseynation.onrender.com/" target="_blank" className="flex items-center justify-center">
+              <Link
+                to="https://jerseynation.onrender.com/"
+                target="_blank"
+                className="flex items-center justify-center"
+              >
                 <img
                   src="./jerseyNation.png"
                   alt=""
